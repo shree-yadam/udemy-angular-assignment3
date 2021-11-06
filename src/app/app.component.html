@@ -1,8 +1,8 @@
-<button
+<button class="btn btn-primary"
 (click)="onClickDisplay()"
 *ngIf="!isDisplay; else hideDetails">Display Details</button>
 <ng-template #hideDetails>
-  <button
+  <button class="btn btn-primary"
     (click)="onClickDisplay()">Hide Details</button>
 </ng-template>
 <p *ngIf="isDisplay">{{ paragraph }}</p>
