@@ -7,6 +7,6 @@
 </ng-template>
 <p *ngIf="isDisplay">{{ paragraph }}</p>
 <p
-*ngFor="let num of arrCount"
-[ngStyle]="{backgroundColor: getColor(num)}"
-[ngClass]="{fifth: num >= 5}">{{ num }}</p>
+*ngFor="let num of arrCount; let i = index"
+[ngStyle]="{backgroundColor: getColor(i)}"
+[ngClass]="{fifth: i >= 5}">{{ num }}</p>
